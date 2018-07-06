@@ -1,7 +1,8 @@
+<!-- this is a special layout file that comes with Rails. We will use this as a template to avoid repeating code -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SampleApp</title>
+    <title><%= yield(:title) %> | Sample App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
