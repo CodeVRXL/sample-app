@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # Rails convention: named routes. Makes things more intuitive and easier for users to navigate webpage!
 
   # get 'static_pages/help'
-  get '/help',      to: 'static_pages#help', as: 'helf' #creates 'help_path' and 'help_url', same as root
+  get '/help',      to: 'static_pages#help' #creates 'help_path' and 'help_url', same as root
   # get 'static_pages/about'
   get '/about',     to: 'static_pages#about'
   # get 'static_pages/contact'
