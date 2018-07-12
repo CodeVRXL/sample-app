@@ -33,7 +33,7 @@ gem 'duktape'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'bcrypt',                  '3.1.12'
+gem 'bcrypt',                  '3.1.12' #hash function to generate secure password
 gem 'faker',                   '1.7.3'
 gem 'carrierwave',             '1.2.2'
 gem 'mini_magick',             '4.7.0'
