@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      log_in @user
       flash[:success] = "Welcome to yaboiBigD" #Rails way of displaying a temporary msg. Here we are providing a key-value pair to be displayed upon success
       redirect_to @user #same as: redirect_to user_url(@user). Rails can automatically infer this
     else
