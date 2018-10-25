@@ -7,7 +7,8 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:sessions][:password])
         log_in user
         params[:sessions][:remember_me] == '1' ? remember(user) : forget(user)
-        redirect_to user #Rails automatically converts this to the route for the user's profile page: user_url(user)
+        # redirect_to user #Rails automatically converts this to the route for the user's profile page: user_url(user)
+        redirect_back_or user
     else
       flash.now[:danger] = "Invalid email/password combination"
       render 'new' #renders the 'new' view in app/views/sessions

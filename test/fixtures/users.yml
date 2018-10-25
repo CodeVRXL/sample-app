@@ -12,3 +12,8 @@ dragonborn:
   name: dragonborn
   email: dragonborn@skyrim.com
   password_digest: <%= User.digest('123456789') %> #allowed because fixtures support embedded ruby
+
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest('123456789') %>
